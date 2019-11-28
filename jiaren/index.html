@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/swiper.min.css">
+
+  <!-- Demo styles -->
+  <style>
+    body {
+      background: #fff;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+
+    }
+
+    #kuang {
+      width: 100%;
+      height: 50px;
+      background: #dadada;
+      text-align: center;
+      line-height: 50px;
+      color: red;
+      font-weight: bold;
+    }
+
+    #neirong {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    #neirong img {
+      margin-left: 13%;
+      margin-right: 4%;
+      width: 75%;
+      height: 55%;
+    }
+
+    #dianji {
+      width: 100%;
+      height: 50px;
+    }
+
+    #qiehuan {
+      text-align: center;
+      line-height: 50px;
+      width: 100px;
+      height: 50px;
+      background-image: linear-gradient(to right, red, yellow);
+      margin-left: 12.6%;
+      float: left;
+    }
+
+    #qiehuan1 {
+      text-align: center;
+      line-height: 50px;
+      width: 100px;
+      height: 50px;
+      background-image: linear-gradient(to right, red, yellow);
+      float: left;
+      margin-left: 22.1%;
+    }
+
+    #c {
+      width: 100%;
+      transition: all .28s ease-in .1s;
+      opacity: 0;
+      position: absolute;
+      top: 0px;
+    }
+
+    #c img {
+      margin-left: 13%;
+      margin-right: 4%;
+      width: 75%;
+      height: 55%;
+    }
+
+    #tou {
+      width: 100%;
+      height: 200px;
+      margin-top: 2%;
+    }
+
+    #p {
+      position: relative;
+    }
+
+    .un-ul>li {
+      width: 20%;
+      height: 50px;
+      line-height: 50px;
+      margin-left: 3%;
+      margin-right: 7%;
+      cursor: pointer;
+      text-align: center;
+
+      display: inline-block;
+    }
+
+    #tou {
+      position: relative;
+    }
+
+    .display-none {
+      display: none;
+    }
+
+    .border-bottom {
+      border-bottom: 1px solid #EEEEEE;
+    }
+
+    .tab-body {
+      width: 75%;
+      margin: 0 auto;
+    }
+
+    .tab-body img {
+      width: 100%;
+      height: auto;
+    }
+
+    #tou span {
+      position: absolute;
+      top: 2%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="kuang">
+    一家亲
+  </div>
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(img/1.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/2.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/3.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/4.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/5.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/6.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/7.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/8.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/11.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/10.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/12.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/24.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/14.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/15.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/16.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/17.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/18.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/19.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/20.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/21.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/22.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/23.jpg)"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <div id="p">
+    <div id="neirong">
+      <img src="img/25.jpg" alt="">
+      <img src="img/26.jpg" alt="">
+      <img src="img/27.jpg" alt="">
+      <img src="img/28.jpg" alt="">
+      <img src="img/29.jpg" alt="">
+      <img src="img/30.jpg" alt="">
+      <img src="img/31.jpg" alt="">
+      <img src="img/38.jpg" alt="">
+      <img src="img/37.jpg" alt="">
+      <img src="img/33.jpg" alt="">
+    </div>
+    <div id="c">
+      <img src="img/34.jpg" alt="">
+      <img src="img/35.jpg" alt="">
+      <img src="img/36.jpg" alt="">
+      <img src="img/37.jpg" alt="">
+      <img src="img/38.jpg" alt="">
+      <img src="img/39.jpg" alt="">
+      <img src="img/40.jpg" alt="">
+      <img src="img/41.jpg" alt="">
+      <img src="img/42.jpg" alt="">
+      <img src="img/43.jpg" alt="">
+      <img src="img/45.jpg" alt="">
+    </div>
+  </div>
+  <div id="dianji">
+    <div id="qiehuan">切换</div>
+    <div id="qiehuan1">返回</div>
+  </div>
+
+
+  <div id="tou">
+    <span style="font-size:5px;padding-left: 2%;color: red;">可以点</span>
+    <div class="tab">
+      <div class="border-bottom">
+        <ul class="un-ul tab-head">
+          <li>大</li>
+          <li>家</li>
+          <li>庭</li>
+        </ul>
+      </div>
+      <div class="tab-body">
+        <div>
+          <img src="img/46.jpg" alt="">
+          <img src="img/47.jpg" alt="">
+          <img src="img/48.jpg" alt="">
+          <img src="img/49.jpg" alt="">
+          <img src="img/50.jpg" alt="">
+          <img src="img/51.jpg" alt="">
+          <img src="img/66.jpg" alt="">
+          <img src="img/67.jpg" alt="">
+        </div>
+        <div class="display-none">
+          <img src="img/52.jpg" alt="">
+          <img src="img/53.jpg" alt="">
+          <img src="img/54.jpg" alt="">
+          <img src="img/55.jpg" alt="">
+          <img src="img/56.jpg" alt="">
+          <img src="img/57.jpg" alt="">
+          <img src="img/65.jpg" alt="">
+        </div>
+        <div class="display-none">
+          <img src="img/58.jpg" alt="">
+          <img src="img/59.jpg" alt="">
+          <img src="img/60.jpg" alt="">
+          <img src="img/61.jpg" alt="">
+          <img src="img/62.jpg" alt="">
+          <img src="img/63.jpg" alt="">
+          <img src="img/64.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+  <script src="js/jquery-1.12.3.min.js"></script>
+  <script>
+    $('.tab-head>li').hover(function (e) {
+      $('.tab-body>div').eq($(this).index()).show().siblings().hide();
+    }, function (e) {
+      $('.tab-body>div').eq($(this).index()).show().siblings().hide();
+    })
+    var lock = true;
+    qiehuan.onclick = function () {
+      if (lock) {
+        lock = false;
+        neirong.style = "opacity: 0;";
+        c.style = "transition: all 0.8s ease-in .1s;opacity:1";
+      } else {
+        lock = true;
+        neirong.style = "opacity: 1;";
+        c.style = "transition: all 0.1s ease-in .1s;transform:translateX(100px;);";
+      }
+    }
+  </script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+  <script>
+    window.onload = function () {
+      var obtn = document.getElementById('qiehuan1');
+      var clientHeight = document.documentElement.clientHeight;
+      var timer = null;
+      var isTop = true;
+
+      window.onscroll = function () {
+        var osTop = document.documentElement.scrollTop || document.body.scrollTop;
+        if (osTop >= clientHeight) {
+          obtn.style.display = 'block';
+        } else {
+          obtn.style.display = 'none';
+        }
+
+        if (!isTop) {
+          clearInterval(timer);
+        }
+        isTop = false;
+      }
+
+      //给其添加点击事件
+      obtn.onclick = function () {
+        //写定时器,动画效果的函数setInterval(),放一个匿名函数function()
+        timer = setInterval(function () {
+          var osTop = document.documentElement.scrollTop || document.body.scrollTop;
+          var ispeed = Math.floor(-osTop / 5);
+
+          document.documentElement.scrollTop = document.body.scrollTop = osTop + ispeed;
+
+          isTop = true;
+          console.log(osTop - ispeed);
+          if (osTop == 0) {
+            clearInterval(timer);
+          }
+        }, 30);
+
+      }
+    }
+  </script>
+
+</body>
+
+</html>
